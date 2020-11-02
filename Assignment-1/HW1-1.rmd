@@ -1,0 +1,28 @@
+---
+title: "Homework1"
+author: "Azat Dovgeldiyev"
+date: "9/21/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+## Import dependencies
+```{r}
+library(dplyr)
+library(mosaic)
+library(lubridate)
+library(ggplot2)
+library(tidyquant)
+```
+
+```{r}
+stock_data <- read.csv(file = "Intel-1998.csv", header = TRUE, sep = ",")
+head(stock_data)
+```
+```{r}
+ggplot(stock_data, aes(x=Date, y=Close))+geom_line()
+```
