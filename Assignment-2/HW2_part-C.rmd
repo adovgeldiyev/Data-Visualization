@@ -1,0 +1,20 @@
+---
+title: "HW2-part-C"
+author: "Azat Dovgeldiyev"
+date: "10/3/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r}
+library(ggplot2)
+library(viridis)
+```
+
+```{r}
+food_service = read.csv("")
